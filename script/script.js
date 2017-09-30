@@ -1,6 +1,14 @@
 
+var a,b;
 
-var a = document.getElementById("a").value;
-var b = document.getElementById("a").value;
+function setValues(){
+	 a = Number(document.getElementById("a").value) ;
+	 b = Number(document.getElementById("b").value) ;
+}
 
-alert(a);
+function sum(){
+	setValues();
+	result = a + b;
+	alert("The sum is" + " " + result);
+	return result;
+}
